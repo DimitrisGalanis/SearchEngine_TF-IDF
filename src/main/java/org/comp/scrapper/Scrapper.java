@@ -68,7 +68,7 @@ public class Scrapper {
             Element description = document.select("p").get(3);
             String str_title = title!=null?title.toString().replace("<h1>","").replace("</h1>",""):"";
             String str_description =description!=null? description.toString().replace("<p>","").replace("</p>",""):"";
-            Item item = new Item(str_title,str_description);
+            Item item = new Item(str_title,str_description,url);
             items.add(item);
             } catch (IOException e) {
                 throw new RuntimeException(e);

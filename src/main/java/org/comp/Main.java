@@ -18,7 +18,7 @@ public class Main {
         items.sort((item1, item2) -> Double.compare(item2.getTf_idf(), item1.getTf_idf())); // ordered by tf_idf value --> DESC
 
         for ( Item item : items) {
-            System.out.printf(" id = %d    ,   tf_idf = %f \n",item.getId(), item.getTf_idf() );
+            System.out.printf(" url = %s,   tf_idf = %f \n",item.getUrl(), item.getTf_idf() );
         }
     }
 }
