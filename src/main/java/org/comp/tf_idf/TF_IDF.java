@@ -1,6 +1,6 @@
 package org.comp.tf_idf;
 
-import items.Item;
+import org.comp.item.Item;
 
 import java.util.HashMap;
 import java.util.List;

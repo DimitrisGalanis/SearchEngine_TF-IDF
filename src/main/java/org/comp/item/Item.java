@@ -1,4 +1,4 @@
-package items;
+package org.comp.item;
 
 import java.util.HashMap;
 import java.util.Objects;

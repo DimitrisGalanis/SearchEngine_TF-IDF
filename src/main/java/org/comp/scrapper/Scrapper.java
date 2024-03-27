@@ -1,7 +1,7 @@
 package org.comp.scrapper;
 
 
-import items.Item;
+import org.comp.item.Item;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
