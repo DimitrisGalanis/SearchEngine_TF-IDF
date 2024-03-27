@@ -7,6 +7,8 @@ import java.util.List;
 
 public class TF_IDF {
 
+    public TF_IDF() {}
+
     /**
      * Iterates through the items passed as arguments
      * Split the content of each item
@@ -15,7 +17,7 @@ public class TF_IDF {
      * (2)-- Sets the frequencyTable
      * @param items
      */
-    public static void createFrequencyTable(List<Item> items) {
+    public void createFrequencyTable(List<Item> items) {
 
         for (Item item : items) {
             HashMap<String, Integer> frequencyTable = new HashMap<>();
@@ -37,7 +39,7 @@ public class TF_IDF {
      * @param items
      * @param term
      */
-    public static void calculateTF_IDF(List<Item> items , String term) {
+    public  void calculateTF_IDF(List<Item> items , String term) {
         double idf = calculate_IDF(items,term);
 
 

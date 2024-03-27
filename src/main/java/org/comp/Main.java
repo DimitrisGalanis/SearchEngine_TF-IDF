@@ -11,9 +11,9 @@ public class Main {
         List<String> URLS = scrapper.crawlURL("https://books.toscrape.com/");
         List<Item> items = scrapper.scrapeURLS(URLS);
 
-
-        TF_IDF.createFrequencyTable(items);  // creates frequency table
-        TF_IDF.calculateTF_IDF(items,"this");  // calculates the TF_IDF for the term passed
+        TF_IDF tf_idf = new TF_IDF();
+        tf_idf.createFrequencyTable(items);  // creates frequency table
+        tf_idf.calculateTF_IDF(items,"this");  // calculates the TF_IDF for the term passed
 
         items.sort((item1, item2) -> Double.compare(item2.getTf_idf(), item1.getTf_idf())); // ordered by tf_idf value --> DESC
 

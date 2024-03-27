@@ -53,6 +53,7 @@ public class Scrapper {
         return URLS;
     }
 
+
     /**
      * Scrapes the title and the content of the page
      * @param URLS ---> List<String>
@@ -74,8 +75,6 @@ public class Scrapper {
                 throw new RuntimeException(e);
             }
         }
-
-
 
         return items;
     }

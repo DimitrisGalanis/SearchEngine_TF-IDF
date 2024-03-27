@@ -10,6 +10,17 @@ public class Item {
     private int numberOfTermsInItem;
     private double tf_idf;
     private final String url;
+    private static int _id = 1;
+    private final int id;
+
+    public Item(String title, String content,String url) {
+        this.tf_idf = -1;
+        this.title = title;
+        this.url = url;
+        this.content = content;
+        this.id = _id;
+        _id++;
+    }
 
     public double getTf_idf() {
         return tf_idf;
@@ -23,12 +34,7 @@ public class Item {
         return numberOfTermsInItem;
     }
 
-    private static int _id = 1;
-    private final int id;
-
-    public String getUrl() {
-        return url;
-    }
+    public String getUrl() { return url; }
 
     public int getId() {
         return id;
@@ -44,15 +50,6 @@ public class Item {
 
     public void setFrequencyTable(HashMap<String, Integer> frequencyTable) {
         this.frequencyTable = frequencyTable;
-    }
-
-    public Item(String title, String content,String url) {
-        this.tf_idf = -1;
-        this.title = title;
-        this.url = url;
-        this.content = content;
-        this.id = _id;
-        _id++;
     }
 
     public String getTitle() {
