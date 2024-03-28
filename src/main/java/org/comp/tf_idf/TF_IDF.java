@@ -5,6 +5,15 @@ import org.comp.item.Item;
 import java.util.HashMap;
 import java.util.List;
 
+
+/**
+ *
+ *  TF_DF(t,d,D) = tf(t,d) * idf (t,D)
+ *  tf(t,d) = n/N   is the term frequency, where n {@number of times term appear in document d} and N {@total_number of terms in document d}
+ *  idf(t,D) = log(N/n)   is the inverse document frequency, where N {@number of documentsin data set} and n{@number of documents that contain term in data set}
+ *
+ */
+
 public class TF_IDF {
 
     public TF_IDF() {}
