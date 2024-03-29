@@ -5,7 +5,7 @@ This Java application serves as a search engine, capable of crawling websites, s
 ## Features
 
 - Web crawling: The application crawls specified websites to gather relevant data for indexing.
-- Web scraping: It extracts relevant text content from web pages using scraping techniques.
+- Web scraping: It extracts relevant text content from web pages using Jsoup.
 - TF-IDF algorithm: Implements the Term Frequency-Inverse Document Frequency algorithm for indexing and ranking documents.
 - Keyword search: Users can input keywords to search for relevant documents.
 
